@@ -13,7 +13,7 @@ class CountDown extends React.Component {
         this.state = {
             now: Math.trunc((new Date()).getTime() / 1000),
             date: null,
-            diff: 0
+            diff: 0,
         }
 
         this.seconds = this.seconds.bind(this);
@@ -129,11 +129,11 @@ class CountDown extends React.Component {
     }
 
     setDayString() {
-        return this.days() > 1 ? 'days' : 'day';
+        return this.days() > 1 ? 'dias' : 'dia';
     }
 
     setHourString() {
-        return this.hours() > 1 ? 'hours' : 'hour';
+        return this.hours() > 1 ? 'horas' : 'hora';
     }
 
     // update show days
@@ -163,7 +163,7 @@ class CountDown extends React.Component {
                     </li>
                     <li>
                         <p className="digit">{ this.twoDigits(this.seconds()) }</p>
-                        <p className="text">Sec</p>
+                        <p className="text">Seg</p>
                     </li>
                 </ul>
             </div>
